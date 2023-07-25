@@ -17,10 +17,10 @@ public class Main {
         Consumer consumer = new Consumer(list);
         Producer producer = new Producer(list,limiter,maxQueue);
 
-        // Create producer thread
+        // Создаем поток Продюсер
         Thread producerThread = new Thread(producer);
 
-        // Create consumer thread
+        // Создаем поток Консьюмер
         Thread consumerThread = new Thread(consumer);
 
 
