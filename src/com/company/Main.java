@@ -10,8 +10,10 @@ public class Main {
 
 
         Deque<String> list = new ConcurrentLinkedDeque<>();
-        RateLimiter limiter = new RateLimiterImpl(100);
 
+         //объект огранечителя 
+        RateLimiter limiter = new RateLimiterImpl(100);
+        // Максимальный размер очереди
         int maxQueue = 1000;
 
         Consumer consumer = new Consumer(list);
